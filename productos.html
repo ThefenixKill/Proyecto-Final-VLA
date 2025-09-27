@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechShop - Inicio | Electrónicos, Joyería y Ropa en Costa Rica</title>
+    <meta name="description"
+        content="Bienvenido a TechShop, fundada en 2010 en San José, Costa Rica. Descubre electrónicos, joyería y ropa con calidad e innovación.">
+    <meta name="keywords"
+        content="TechShop, electrónicos Costa Rica, joyería, ropa, San José, innovación, sostenibilidad">
+    <meta name="author" content="Killian Espinoza Leon">
+    <title>TechShop - Productos | Catálogo en Costa Rica</title>
+    <meta name="description"
+        content="Catálogo de TechShop: Electrónicos, joyería, ropa hombre y mujer. Productos de calidad desde San José, Costa Rica.">
+    <meta name="keywords" content="productos TechShop, electronics, jewelery, clothing Costa Rica">
+
+
+    <meta property="og:title" content="TechShop - Tu tienda de tecnología y moda">
+    <meta property="og:description" content="Explora nuestro catálogo y contacta con nosotros.">
+    <meta property="og:image" content="https://source.unsplash.com/1200x630/?tech store">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!--Estilos-->
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="./index.html">TechShop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/productos.html">Productos</a></li>
+
+                    <li class="nav-item"><a class="nav-link" href="https://facebook.com/techshop" target="_blank"><i
+                                class="fab fa-facebook"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://instagram.com/techshop" target="_blank"><i
+                                class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container mt-5 pt-5">
+        <h2 class="text-center mb-4">Catálogo de Productos</h2>
+        <p class="text-center mb-4">Explora nuestra selección de electrónicos, joyería y ropa. Todos los productos son
+            de alta calidad y con garantía. (Datos cargados desde API FakeStore)</p>
+
+        <!-- Loading Spinner: Muestra mientras carga API -->
+        <div id="loading" class="text-center py-5">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Cargando productos...</span>
+            </div>
+            <p class="mt-2">Cargando catálogo...</p>
+        </div>
+
+        <!-- Tabs para Categorías: Se poblan dinámicamente con API -->
+        <ul class="nav nav-tabs justify-content-center mb-4" id="tabsCategorias" role="tablist">
+            <!-- Tabs se generan en JS -->
+        </ul>
+
+        <!-- Contenido de Tabs: Grid de productos -->
+        <div class="tab-content" id="contenidoProductos">
+            <!-- Cards se generan en JS -->
+        </div>
+
+        <!-- Mensaje de Error (oculto por default) -->
+        <div id="errorMsg" class="alert alert-warning text-center" style="display: none;">
+            Error al cargar productos. Verifica tu conexión o recarga la página.
+        </div>
+    </main>
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p>&copy; 2025 TechShop. Todos los derechos reservados. | San José, Costa Rica | <a href="#formContacto"
+                class="text-white">Contáctanos</a></p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!--  JS  -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

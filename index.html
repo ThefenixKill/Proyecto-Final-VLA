@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechShop - Inicio | Electrónicos, Joyería y Ropa en Costa Rica</title>
+    <meta name="description" content="Bienvenido a TechShop, fundada en 2010 en San José, Costa Rica. Descubre electrónicos, joyería y ropa con calidad e innovación.">
+    <meta name="keywords" content="TechShop, electrónicos Costa Rica, joyería, ropa, San José, innovación, sostenibilidad">
+    <meta name="author" content="Killian Espinoza Leon">
+    <!-- OG para shares en redes -->
+    <meta property="og:title" content="TechShop - Tu tienda de tecnología y moda">
+    <meta property="og:description" content="Explora nuestro catálogo y contacta con nosotros.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/007bff/ffffff?text=TechShop"> <!-- Fix: Placeholder confiable -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Estilos: Fix - Agrega nombre del archivo -->
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+    <!-- Navbar: Fix - Rutas consistentes (sin ./) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">TechShop</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                    <!-- Redes: Agrega aria-label para accesibilidad -->
+                    <li class="nav-item"><a class="nav-link" href="https://facebook.com/techshop" target="_blank" aria-label="Facebook de TechShop"><i class="fab fa-facebook"></i></a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://instagram.com/techshop" target="_blank" aria-label="Instagram de TechShop"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <main class="container mt-5 pt-5">
+        <section class="hero text-white text-center py-5 mb-5">
+            <div class="container">
+                <h1 class="display-4 fw-bold">Bienvenido a TechShop</h1>
+                <p class="lead">Fundada en 2010 en San José, Costa Rica. Tu tienda de electrónicos, joyería y ropa con calidad e innovación.</p>
+                <a href="productos.html" class="btn btn-light btn-lg">Explora Productos</a> 
+            </div>
+        </section>
+
+       
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Nuestras Categorías</h2>
+                <div class="row">
+                    <div class="col-md-3 text-center mb-4">
+                        <img src="./img/electronicos.webp" alt="Electrónicos TechShop" class="img-fluid rounded mb-2">
+                        <h5>Electrónicos</h5>
+                        <p>Todo en tecnología </p>
+                        <a href="productos.html#electronics" class="btn btn-outline-primary">Ver Más</a>
+                    </div>
+                    <div class="col-md-3 text-center mb-4">
+                        <img src="./img/joyeria.webp" alt="Joyería TechShop" class="img-fluid rounded mb-2">
+                        <h5>Joyería</h5>
+                        <p>Piezas elegantes y únicas.</p>
+                        <a href="productos.html#jewelery" class="btn btn-outline-primary">Ver Más</a>
+                    </div>
+                    <div class="col-md-3 text-center mb-4">
+                        <img src="./img/ropa-hombre.webp" alt="Ropa Hombre TechShop" class="img-fluid rounded mb-2">
+                        <h5>Ropa Hombre</h5>
+                        <p>Estilo casual y formal.</p>
+                        <a href="productos.html#mens" class="btn btn-outline-primary">Ver Más</a>
+                    </div>
+                    <div class="col-md-3 text-center mb-4">
+                        <img src="./img/ropa-mujer.webp" alt="Ropa Mujer TechShop" class="img-fluid rounded mb-2">
+                        <h5>Ropa Mujer</h5>
+                        <p>Moda trendy y cómoda.</p>
+                        <a href="productos.html#womens" class="btn btn-outline-primary">Ver Más</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonios: Sin cambios -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">Lo que dicen nuestros clientes</h2>
+                <div id="carouselTestimonios" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Testimonio 1: Juan Pérez -->
+                        <div class="carousel-item active">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8 text-center">
+                                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=150&h=150&fit=crop&crop=face" alt="Foto de Juan Pérez - Cliente TechShop" class="rounded-circle mb-3" style="width: 100px; height: 100px;">
+                                    <h6 class="mb-3">Juan Pérez</h6>
+                                    <p class="italic">"Desde que descubrí TechShop, no he vuelto a comprar tecnología en otro lugar. La calidad de sus productos es excepcional y siempre encuentro lo último en gadgets. Además, su servicio al cliente es impecable. Recientemente, compré una laptop ProTech 2024 y no podría estar más satisfecho. El equipo me ayudó a elegir la opción perfecta para mis necesidades y la entrega fue rápida y sin problemas."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonio 2: Laura Fernández -->
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8 text-center">
+                                    <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop&crop=face" alt="Foto de Laura Fernández - Cliente TechShop" class="rounded-circle mb-3" style="width: 100px; height: 100px;">
+                                    <h6 class="mb-3">Laura Fernández</h6>
+                                    <p class="italic">"TechShop no solo es mi tienda de confianza para productos tecnológicos, sino también para ropa y accesorios de moda. Recientemente, compré una chaqueta y unos auriculares inalámbricos que combinan perfectamente con mi estilo. La calidad de las prendas es excelente y los diseños son modernos y elegantes. Además, me encanta cómo integran la tecnología con la moda. Los accesorios, como los relojes inteligentes y los bolsos con cargadores incorporados, son tanto funcionales como estilizados. La atención al cliente fue excepcional, ayudándome a encontrar justo lo que necesitaba. TechShop realmente entiende de moda y tecnología, haciendo que la experiencia de compra sea única y satisfactoria."</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonio 3: Carlos López -->
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8 text-center">
+                                    <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=150&h=150&fit=crop&crop=face" alt="Foto de Carlos López - Cliente TechShop" class="rounded-circle mb-3" style="width: 100px; height: 100px;">
+                                    <h6 class="mb-3">Carlos López</h6>
+                                    <p class="italic">"Lo que más valoro de TechShop es su compromiso con el cliente. Hace unos meses compré una tablet para mi trabajo y tuve algunas dudas sobre su configuración. El equipo de soporte técnico fue muy amable y eficiente, resolviendo todas mis inquietudes en poco tiempo. La tablet ha sido una excelente herramienta para mi productividad diaria. Sin duda, TechShop es la mejor opción para quienes buscamos calidad y buen servicio."</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Controles del carousel -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonios" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonios" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario de Contacto -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Contáctanos</h2>
+                <p class="text-center mb-4">Para cualquier consulta, duda o comentario, por favor complete el siguiente formulario. Nos pondremos en contacto con usted lo antes posible.</p>
+                <form id="formContacto" class="row g-3 justify-content-center">
+                    <div class="col-md-6">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="email" placeholder="tu@email.com" required>
+                    </div>
+                    <div class="col-12">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="5" placeholder="Tu mensaje..." required></textarea>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+
+                <!-- Información de Contacto -->
+                <div class="row justify-content-center mt-5">
+                    <div class="col-md-6 text-center">
+                        <h4>Información de Contacto</h4>
+                        <p><strong>Teléfono:</strong> +506 8765 4321</p>
+                        <p><strong>Correo Electrónico:</strong> contacto@techshop.cr</p>
+                        <p><strong>Dirección:</strong> Avenida Central 456, Barrio Innovación, San José, Costa Rica, C.P. 10101</p> <!-- Fix: Completo -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p>&copy; 2024 TechShop. Todos los derechos reservados. | San José, Costa Rica | <a href="#formContacto" class="text-white">Contáctanos</a></p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JS-->
+    <script src="./js/script.js"></script>
+</body>
+</html>

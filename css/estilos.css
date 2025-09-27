@@ -1,0 +1,136 @@
+
+
+/* Estilos globales */
+:root {
+    --primary-color: #007bff; 
+    --accent-color: #ffd700; 
+    --bg-light: #f8f9fa;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Hero Banner */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/1200x600/?technology store');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.hero h1 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero .btn {
+    background: var(--accent-color);
+    border: none;
+    font-weight: bold;
+}
+
+.hero .btn:hover {
+    background: #e6c200;
+}
+
+/* Testimonios */
+.testimonios .carousel-item p.italic {
+    font-style: italic;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.testimonios .carousel-item img {
+    border: 3px solid #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Categorías y Cards */
+.categorias .col-md-3 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.categorias .col-md-3:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+.categorias .col-md-3 img:hover {
+    opacity: 0.9; 
+}
+
+.card-producto {
+    transition: transform 0.2s;
+    border: none;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.card-producto:hover {
+    transform: scale(1.05);
+}
+
+.card-producto .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-producto .precio {
+    font-size: 1.5em;
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+/* Formulario */
+#formContacto label {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.info-contacto {
+    background: var(--bg-light);
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid var(--primary-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        padding: 50px 0 !important;
+    }
+    
+    .hero h1 {
+        font-size: 2em;
+    }
+    
+    .carousel-item img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .carousel-item p {
+        font-size: 1em;
+        padding: 0 20px;
+    }
+    
+    .card-producto .card-img-top {
+        height: 150px;
+    }
+    
+   
+    .categorias .col-md-3:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}
+
+/* Loading y Error*/
+#loading {
+    min-height: 200px;
+}
+
+#errorMsg {
+    margin-top: 20px;
+}
