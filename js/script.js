@@ -1,7 +1,7 @@
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    // 1. Manejo del Formulario de Contacto (en index.html)
+    // 1. Manejo del Formulario de Contacto 
     const formContacto = document.getElementById('formContacto');
     if (formContacto) {
         formContacto.addEventListener('submit', function(e) {
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             if (nombre && email && mensaje) {
                
-                alert(`¡Gracias, ${nombre}! Tu mensaje ha sido enviado a contacto@techshop.cr. Te responderemos pronto desde San José, Costa Rica.`);
+                alert(`¡Gracias, ${nombre}! Tu mensaje ha sido enviado a contacto@techshop.cr. Te responderemos pronto.`);
                 formContacto.reset(); 
             } else {
                 alert('Por favor, completa todos los campos correctamente.');
@@ -150,7 +150,17 @@ async function verDetalles(id) {
     }
 }
 
-// Helper: Capitaliza primera letra (ej. "electronics" -> "Electronics")
+// Helper
 function capitalizar(str) {
     return str.charAt(0).toUpperCase() + str.slice(1).replace("'", '');
 }
+
+// footer
+
+document.addEventListener('DOMContentLoaded', () => {
+    const yearSpan = document.getElementById('currentYear');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+    }
+});
+
