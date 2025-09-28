@@ -44,7 +44,7 @@ async function initProductos() {
     const errorMsg = document.getElementById('errorMsg');
 
     try {
-        // Paso 1: Cargar categorías de la API
+        //  Cargar categorías de la API
         const categoriasRes = await fetch('https://fakestoreapi.com/products/categories');
         const categorias = await categoriasRes.json(); 
 
@@ -66,10 +66,10 @@ async function initProductos() {
         });
         tabsContainer.innerHTML = tabsHtml;
 
-        // Paso 2: Cargar productos de la primera categoría por default
+        // Cargar productos de la primera categoría por default
         await cargarProductosPorCategoria(categorias[0], contenido);
 
-        // Paso 3: Event listeners para tabs (al clic, carga categoría)
+        //  Event listeners para tabs (al clic, carga categoría)
         tabsContainer.addEventListener('click', async function(e) {
             if (e.target.matches('.nav-link')) {
                 const categoria = e.target.id.replace('tab-', '');
